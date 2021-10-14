@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "567387739150",
+    "project_id": "welly-1bc06",
+    "storage_bucket": "welly-1bc06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567387739150:android:271b284058b2278301d85f",
+        "android_client_info": {
+          "package_name": "com.example.welly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567387739150-u26p0b1nc58ke4lo0jgsafu7rh4o46jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrW97ivAf8lnM9lfyTcq3_lbk23fgjptI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567387739150-u26p0b1nc58ke4lo0jgsafu7rh4o46jb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
