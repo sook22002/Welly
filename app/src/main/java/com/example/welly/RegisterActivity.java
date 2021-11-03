@@ -3,6 +3,7 @@ package com.example.welly;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -56,6 +57,8 @@ public class RegisterActivity extends AppCompatActivity {
                              account.setPassword(strPwd);
                              //setValue  데이터베잇 삽입
                              mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
+                             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                             startActivity(intent);
 
                              Toast.makeText(RegisterActivity.this, "회원가입에 성공하였습니다.", Toast.LENGTH_SHORT);
                          } else {

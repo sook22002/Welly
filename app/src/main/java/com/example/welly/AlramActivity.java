@@ -13,6 +13,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -28,6 +29,15 @@ public class AlramActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alram);
+
+        ImageView imageView  = findViewById(R.id.goHome);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AlramActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
 
         final TimePicker picker=(TimePicker)findViewById(R.id.timePicker);
         picker.setIs24HourView(true);

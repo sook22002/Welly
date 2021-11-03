@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#8FFFEB3B"
+    android:orientation="vertical"
+    android:id="@+id/drawer">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"/>
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FFFEB3B"
+        android:text="홈"
+        android:layout_margin="10dp"/>
+
+
+    <Button
+        android:id="@+id/btn_barcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FFFEB3B"
+        android:layout_margin="10dp"
+        android:text="바코드" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FFFEB3B"
+        android:layout_margin="10dp"
+        android:text="검색"/>
+
+    <Button
+        android:id="@+id/btn_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FFFEB3B"
+        android:layout_margin="10dp"
+        android:text="알람설정"/>
+
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FFFEB3B"
+        android:layout_margin="10dp"
+        android:text="로그아웃"/>
+
+    <ImageView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#8FFFEB3B"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_baseline_close_24"
+         />
+
+
+</LinearLayout>

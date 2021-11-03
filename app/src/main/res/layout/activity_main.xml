@@ -26,14 +26,14 @@
             android:layout_height="wrap_content"
             android:onClick="mOnClick"
             android:text="검색"
-            android:textSize="12sp" />
+            android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/scanBtn"
+        <ImageView
+            android:id="@+id/homeBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="바코드" />
+            android:src="@drawable/ic_baseline_home_24" />
 
     </LinearLayout>
 
@@ -44,8 +44,8 @@
         <TextView
             android:id="@+id/result"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="8sp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:textStyle="bold"/>
 
     </ScrollView>

@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,7 +34,7 @@ import java.util.Base64;
 public class MainActivity extends AppCompatActivity {
     EditText edit;
     TextView text;
-    Button scanBtn;
+    ImageView homeBtn;
     XmlPullParser xpp;
 
     String key="Svm%2B6xr32aOY87UpaVtoSRfzxu03yUkebwz3d2zw37g4v0QhHWhRyBmYXdbMEiFtdzkyTW%2FBzbzm5KdPswBHmw%3D%3D";
@@ -45,15 +46,15 @@ public class MainActivity extends AppCompatActivity {
 
         edit= (EditText)findViewById(R.id.edit);
         text= (TextView)findViewById(R.id.result);
-        scanBtn=findViewById(R.id.scanBtn);
-        scanBtn.setOnClickListener(new View.OnClickListener() {
+        homeBtn = (ImageView)findViewById(R.id.homeBtn);
+
+        homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Barcode.class);
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
         });
-
 
 
     }
